@@ -7,7 +7,7 @@ import (
 
 func NewAddCmd() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "add SUBJECT OPERAND",
+		Use:   "add TYPE SUBJECT",
 		Short: "Add an entity to isac",
 		Long: `Add a TYPE type entity SUBJECT to isac, where TYPE may be one of 
 application, node, virtual-machine, ip, or test-system. The value of SUBJECT 
