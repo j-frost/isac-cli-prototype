@@ -1,17 +1,18 @@
 package cli
 
 import (
-	"github.com/spf13/cobra"
 	"strings"
+
 	"github.com/j-frost/isac-cli-prototype/pkg/add"
 	"github.com/j-frost/isac-cli-prototype/pkg/rm"
+	"github.com/spf13/cobra"
 )
 
 func Execute() {
 	cmd := &cobra.Command{
-		Use: "isac-cli [draft] [options...] VERB SUBJECT OPERAND",
+		Use:     "isac-cli [draft] [options...] VERB SUBJECT OPERAND",
 		Version: "0.1.0",
-		Short: "isac-cli is a prototype cli for our ISAC repository",
+		Short:   "isac-cli is a prototype cli for our ISAC repository",
 		Long: `isac-cli is a prototype cli for our ISAC repository at 
 //SEIBERT/MEDIA. It tries to unify a number of other tools that also 
 manipulate ISAC. This is an experiment in usability. `,

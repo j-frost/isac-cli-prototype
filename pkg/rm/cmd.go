@@ -1,8 +1,9 @@
 package rm
 
 import (
-	"github.com/spf13/cobra"
 	"strings"
+
+	"github.com/spf13/cobra"
 )
 
 func NewRmCmd() *cobra.Command {

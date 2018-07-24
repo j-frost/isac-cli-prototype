@@ -13,3 +13,6 @@ goimports:
 format: goimports
 	find . -type f -name '*.go' -not -path './vendor/*' -exec gofmt -w "{}" +
 	find . -type f -name '*.go' -not -path './vendor/*' -exec goimports -w "{}" +
+
+ginkgo:
+	ginkgo -progress -r -v

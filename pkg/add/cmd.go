@@ -1,8 +1,9 @@
 package add
 
 import (
-	"github.com/spf13/cobra"
 	"strings"
+
+	"github.com/spf13/cobra"
 )
 
 func NewAddCmd() *cobra.Command {
@@ -45,9 +46,9 @@ func newAddAppCmd() *cobra.Command {
 
 func newAddNodeCmd() *cobra.Command {
 	return &cobra.Command{
-		Use: "node BW_NODE_NAME",
-		Short: "Adds a new bundlewrap managed node to isac. ",
-		Long: ``,
+		Use:     "node BW_NODE_NAME",
+		Short:   "Adds a new bundlewrap managed node to isac. ",
+		Long:    ``,
 		Example: "isac-cli add node pb-0.smedia.customer-product --draft=6877b0ea",
 		Aliases: []string{"n"},
 		Run: func(cmd *cobra.Command, args []string) {
